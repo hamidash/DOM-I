@@ -61,7 +61,7 @@ const navItemArr = navItemValues.filter((item,index) => {
 
   //2d.loop through NavAnchorContent elements and assign NavItemArr values to each one
 navAnchorContent.forEach((item,index) => {
-  navAnchorContent[index].textContent = navItemArr[index];
+  item.textContent = navItemArr[index];
 })
 
 navAnchorContent.forEach(item => item.style.color = "green");
@@ -108,6 +108,7 @@ let mainContH4 = document.querySelectorAll('.text-content h4');
     //4b-2. save main-content object's values and keys to an array
 const mainContKeys = Object.keys(siteContent["main-content"]);
 const mainContValues = Object.values(siteContent["main-content"]);
+
     //4b-3. declare a unique str to match h4 text
 var h4Str = "h4";
 
@@ -120,7 +121,7 @@ const mainContH4Arr = mainContValues.filter((item,index) => {
 )
     //4b-5. add mainContH4Arr's each value into mainContH4 elements
 mainContH4.forEach((item,index) => {
-  mainContH4[index].textContent = mainContH4Arr[index];
+  item.textContent = mainContH4Arr[index];
 })
 
   //4c. Main content paragraphs
@@ -138,7 +139,7 @@ const mainContParagArr = mainContValues.filter((item,index) => {
 )
     //4c-4. loop through each mainContentParag item and update its text to match mainContParagArr values
 mainContentParag.forEach((item,index) => {
-  mainContentParag[index].textContent = mainContParagArr[index];
+  item.textContent = mainContParagArr[index];
 })
 
 
